@@ -1,0 +1,807 @@
+/*
+* @Author: Tao
+* @Date:   2017-09-08 08:21:10
+* @Last Modified by:   Tao
+* @Last Modified time: 2017-09-10 20:26:22
+*/
+    .w {
+        /*版心 提取 */
+        width: 1200px;
+        margin: 0 auto;
+    }
+     body {
+        background: url(../../images/lht/bg_img.jpg)no-repeat center center;
+        font-family: "microsoft yahei";
+         padding-bottom: 100px;
+     }
+    /*导航的小圆点*/
+    .bannerNum {
+        position: absolute;
+    }
+    .bannerNum ul {
+        clear: both;
+    }
+    .bannerNum li {
+        float: left;
+        background: rgba(0,0,0,.3);
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        transition : all 0.8s ease;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+    .bannerNum li.active {
+        width: 50px;
+        background: #fff;
+        border-radius: 10px;
+    }
+     header {
+        background: url(../../images/lht/header_bg.jpg)no-repeat center center;
+        height: 1080px;
+        width: 100%;
+     }
+     .header-top .nav {
+        padding-top: 60px;
+     }
+     .header-top .nav>li {
+        float: left;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        margin-left: 48px;
+         position: relative;
+     }
+    .header-top .nav>li>ul {
+        position: absolute;
+        top:30px;
+        left: 11px;
+        display: none;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+    }
+     .header-top .nav li.small {
+        margin-left: 16px;
+     }
+     .header-top .nav li.middle {
+        margin-left: 32px;
+        margin-top: -30px;
+     }
+     .header-top .nav li a {
+        color: #fff;
+     }
+     .header-top .nav li a:hover {
+        color:  #fdda46;
+     }
+    .slogan {
+        width: 916px;
+        height: 194px;
+        margin: 250px auto 0;
+        position: relative;
+        z-index: 99;
+    }
+    .meng-download {
+        width: 770px;
+        height: 121px;
+        margin: 80px auto 0;
+    }
+    .download-code {
+        width: 95px;
+        height: 95px;
+        padding: 5px;
+        background: #fff;
+    }
+    .download-code img {
+        width: 100%;
+        height: 100%;
+    }
+    .download-btn {
+        width: 171px;
+        margin: 0 10px 0 5px;
+    }
+    .download-btn .az-img {
+        margin-top: 5px;
+    }
+    .app-logo {
+        width: 105px;
+        height: 105px;
+        margin-right: 35px;
+    }
+    .app-logo img {
+        width: 100%;
+        height: 100%;
+    }
+    .slogan-video {
+        width: 122px;
+        height: 131px;
+        background: transparent url(../../images/lht/videoBtn2_c83e42d.png) scroll no-repeat 0 0;
+        position: relative;
+        margin-top: -10px;
+        margin-right: 19px;
+    }
+    .slogan-video span {
+        width: 98px;
+        height: 101px;
+        background: transparent url(../../images/lht/i_zz2_18a2002.png) scroll no-repeat 0 0;
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        transition: all 0.3s;
+    }
+    .slogan-video em {
+        width: 24px;
+        height: 28px;
+        background: transparent url(../../images/lht/tri_639abac.png) scroll no-repeat 0 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -16px 0 0 -7px;
+        transition: all 0.3s;
+    }
+    .slogan-video:hover span {
+        opacity: 0;
+    }
+    .slogan-video:hover em {
+        transform: scale(1.2, 1.2);
+    }
+    .appointmentBtn {
+        display: block;
+        margin-top: 10px;
+    }
+    .game-news {
+        margin-top: -70px;
+        margin-bottom: 28px;
+        position: relative;
+    }
+    .game-news h2 {
+        margin-bottom: 28px;
+    }
+    .game-news .bannerNum {
+        bottom: 20px;
+        padding-left: 30px;
+    }
+    .game-news .banner {
+        width: 580px;
+        height: 297px;
+        overflow: hidden;
+        position: relative;
+    }
+    .game-news .banner-pic {
+        overflow: hidden;
+        width: 200%;
+        position: absolute;
+    }
+    .game-news .banner-pic li {
+        float: left;
+    }
+    .game-news .banner-pic li a {
+        display: block;
+    }
+    .game-info {
+        width: 584px;
+        height: 294px;
+        overflow: hidden;
+    }
+    .info-head {
+        clear: both;
+    }
+    .info-head .list1 li {
+        float: left;
+        width: 92px;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        border-top: 2px solid #8892da;
+        background: #87acff;
+    }
+    .info-head .list1 li a {
+        color: #fff;
+        font: 700 14px/41px "microsoft yahei";
+    }
+    .info-head .list1 li.active {
+        background: transparent;
+    }
+    .info-head .list1 li.active a {
+        color: #CCCCCC;
+    }
+    .info-head .more {
+        width: 124px;
+        height: 41px;
+        background-color: #87acff;
+        border-top: 2px solid #8892da;
+    }
+    .info-head .list2 .title {
+        height: 95px;
+        line-height: 95px;
+        text-align: center;
+        border-bottom: 1px #929b9b dashed;
+        margin-bottom: 17px;
+    }
+    .info-head .list2 li {
+        width: 100%;
+        height: 30px;
+        color: #effdfd;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .info-head .list2 li a {
+        max-width: 485px;
+        color: #ccc;
+        font-size: 14px;
+        float: left;
+        position: relative;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .info-head .list2 li a:hover {
+        color:#5077cf;
+    }
+    .info-head .list2 .title a {
+        width: 100%;
+        max-width: 100%;
+        color: #5077cf;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .info-head .list2 span {
+        float: right;
+    }
+    .ul-inner {
+        overflow: hidden;
+        position: relative;
+        /*width: 500%;*/
+        height: 250px;
+    }
+    .ul-inner ul {
+        position: absolute;
+        width: 584px;
+        left: 584px;
+        top: 250px;
+        opacity: 0;
+        transition: all .8s ease;
+    }
+    .ul-inner .list2.active {
+        /*display: block;*/
+        left: 0;
+        top: 0;
+        opacity: 1;
+        transition: all .8s ease;
+    }
+    
+    .girl-list {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .girl-list ul li {
+        float: left;
+        width: 295px;
+        height: 140px;
+        font-size: 24px;
+        background-color: #c0acdb;
+        margin-right: 5px;
+    }
+    .girl-list ul li:nth-child(2) {
+        background-color:  #eea578;
+    }
+    .girl-list ul li:nth-child(3) {
+        background-color:  #8c9bca;
+    }
+    .girl-list ul li:nth-child(4) {
+        background-color:  #c6c58d;
+    }
+    .girl-list ul li a {
+        width: 295px;
+        height: 140px;
+        display: block;
+        position: relative;
+    }
+    .girl-list .girl-l {
+        width: 176px;
+        height: 191px;
+        background: transparent url(../../images/lht/info-banner2-1.png) scroll no-repeat 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .girl-list-nav li:nth-child(2) .girl-l {
+        background: transparent url(../../images/lht/info-banner2-2.png) scroll no-repeat 0 0;
+    }
+    .girl-list-nav li:nth-child(3) .girl-l {
+        background: transparent url(../../images/lht/info-banner2-3.png) scroll no-repeat 0 0;
+    }
+    .girl-list-nav li:nth-child(4) .girl-l {
+        background: transparent url(../../images/lht/info-banner2-4.png) scroll no-repeat 0 0;
+    }
+    .girl-list .girl-l img {
+        position: absolute;
+   /*     bottom: 0;
+        left: 0;*/
+    }
+    .girl-list-nav li:hover .girl-l>img{
+        animation: feiR 1s ;
+    }
+    /*.girl-list-nav li:nth-child(2):hover .girl-l>img{*/
+        /*animation: feiL 1s ;*/
+    /*}*/
+    /*.girl-list-nav li:nth-child(4):hover .girl-l>img{*/
+        /*animation: feiL 2s ;*/
+    /*}*/
+    @keyframes feiR {
+        0%{
+            left: 0;
+            bottom: 0;
+        }
+        100%{
+            left: 80px;
+            bottom: 50px;
+            opacity: 0;
+        }
+    }
+    @keyframes feiL {
+        /*0%{*/
+            /*left: 0;*/
+            /*bottom: 0;*/
+        /*}*/
+        100%{
+            right: 80px;
+            bottom: 50px;
+            opacity: 0.1;
+        }
+    }
+
+    .girl-list .girlName {
+        width: 276px;
+        text-align: right;
+        padding-top: 40px;
+        margin-right: 19px;
+        color: #fff;
+        float: right;
+        position: relative;
+        z-index: 3;
+    }
+    .girl-list .girlKnow {
+        width: 69px;
+        height: 20px;
+        font-size: 12px;
+        color: #fff3f2;
+        text-align: center;
+        border: 1px #fff3f2 solid;
+        line-height: 20px;
+        position: absolute;
+        bottom: 25px;
+        right: 19px;
+    }
+    /*.girlKnow span {
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 5;
+    }*/
+    .girl-list-nav li:hover .girlKnow span {
+        color: #c0acdb;
+    }
+    .girl-list-nav li:hover .girlKnow {
+        background: #fff;
+    }
+    .girlKnow em {
+        height: 20px;
+        position: absolute;
+        background: #fff;
+        transition: all 5s;
+        left: 0;
+        top: 0;
+    }
+    /*viewKing part 英雄信息*/
+    .viewKing {
+        display: block;
+        position: relative;
+        opacity: 0;
+    }
+    .heroInfo {
+        height: 320px;
+        color: #fff;
+        position: relative;
+    }
+    .heroInfo p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .aboutHero {
+        width: 665px;
+        height: 320px;
+        float: right;
+        position: relative;
+        z-index: 5;
+    }
+    .heroName {
+        width: 210px;
+        /*overflow: hidden;*/
+        position: absolute;
+        height: 220px;
+    }
+    .heroName img {
+        position: absolute;
+        top: -392px;
+        opacity: 0;
+    }
+    .heroName img.active {
+        top: -50px;
+        opacity: 1;
+        transition: all .8s ease;
+    }
+    .heroText {
+        margin-top: 30px;
+        word-break: break-all;
+        width: 400px;
+        position: absolute;
+        height: 225px;
+        right: 0;
+        overflow: hidden;
+    }
+    .heroText .big-wqtj.active {
+        opacity: 1;
+        right: 0;
+        transition: all .8s ease;
+    }
+    .heroText .big-wqtj {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -500px;
+    }
+    .aboutHero {
+        margin-top: 30px;
+    }
+    .wqtj {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        padding-bottom: 17px;
+        margin-bottom: 24px;
+        position: relative;
+    }
+    .wqtj span {
+        width: 100%;
+        height: 6px;
+        background-color: #67678b;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .wqtj s {
+        width: 102px;
+        height: 7px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /*heroBody part 英雄的身体*/
+    .heroBody {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        /*width: 1000px;*/
+        /*height: 1000px;*/
+    }
+    .heroBody>li {
+        width: 814px;
+        height: 961px;
+        position: absolute;
+        top: 130px;
+        left: -800px;
+        opacity: 0;
+    }
+    .heroBody>li.active {
+        left: -254px;
+        transition: all .8s ease;
+        opacity: 1;
+    }
+
+    .heroVoice {
+        position: absolute;
+        top: 500px;
+    }
+    .heroVoice li {
+        position: absolute;
+        top: -700px;
+        opacity: 0;
+    }
+    .selectList {
+        width: 900px;
+        min-height: 745px;
+        float: right;
+        position: relative;
+        z-index: 4;
+        perspective: 500px;
+    }
+    .selectList li {
+        width: 214px;
+        height: 362px;
+        float: left;
+        margin: 0 0 15px 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    .selectList li:first-child {
+        margin-left: 234px;
+    }
+    .selectList .cover {
+        width: 214px;
+        height: 362px;
+        background: transparent url(../../images/lht/tx_zz_1ffc218.png) scroll no-repeat 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .3s ease;
+    }
+    .game-features {
+        /*position: absolute;*/
+        position: relative;
+        z-index: 99;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .game-features h2 {
+        margin-bottom: 28px;
+    }
+    .game-features a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 100;
+        cursor: default;
+    }
+    .game-features li {
+        float: left;
+        width: 140px;
+        position: relative;
+        transition: all .5s;
+    }
+    .game-features b {
+        display: block;
+        width: 140px;
+        height: 350px;
+        opacity: 1;
+        transition: all .8s;
+    }
+    .game-features li.active {
+        width: 639px;
+    }
+    .game-features li.active b {
+        opacity: 0;
+    }
+    .game-features .banner1 {
+        background: url(../../images/lht/ts_d1_9a41982.jpg)no-repeat;
+    }
+    .game-features .banner1 b {
+        background: url(../../images/lht/ts_s1_ee3b059.jpg)no-repeat;
+    }
+    .game-features .banner2 {
+        background: url(../../images/lht/ts_d2_fca0af5.jpg)no-repeat;
+    }
+    .game-features .banner2 b {
+        background: url(../../images/lht/ts_s2_4b02168.jpg)no-repeat;
+    }
+
+.game-features .banner3 {
+        background: url(../../images/lht/ts_d3_837ba9b.jpg)no-repeat;
+    }
+    .game-features .banner3 b {
+        background: url(../../images/lht/ts_s3_1ebbf7c.jpg)no-repeat;
+    }
+
+.game-features .banner4 {
+        background: url(../../images/lht/ts_d4_2e3f284.jpg)no-repeat;
+    }
+    .game-features .banner4 b {
+        background: url(../../images/lht/ts_s4_cb4c087.jpg)no-repeat;
+    }
+    .game-features .banner5 {
+        background: url(../../images/lht/ts_d5_82cbbe1.jpg)no-repeat;
+    }
+    .game-features .banner5 b {
+        background: url(../../images/lht/ts_s5_58ac123.jpg)no-repeat;
+    }
+
+    .cosplay {
+        position: relative;
+    }
+    .cosplay .palyHd {
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin: 0 auto 26px;
+    }
+    .cosplay .playHd .lineLeft{
+        width: 282px;
+        height: 1px;
+        background-color: #000;
+        margin-top: 20px;
+        float: left;
+    }
+    .cosplay .playHd .lineRight {
+        width: 282px;
+        height: 1px;
+        background-color: #000;
+        margin-top: 20px;
+        float: right;
+    }
+    .playHd li {
+        height: 38px;
+        text-align: center;
+        color: #000;
+        font-size: 14px;
+        line-height: 38px;
+        margin-right: 25px;
+        float: left;
+        cursor: pointer;
+        position: relative;
+    }
+.playHd li:hover {
+    border-bottom: 2px #000 solid;
+}
+.playHd li.mmdZp {
+    width: 82px;
+    margin-left: 23px;
+}
+.playHd li.mmdMx, .playHd li.mhZp {
+    width: 108px;
+}
+.playHd li.cvjZp {
+    width: 98px;
+}
+.module06 .playHd li.bqbXz {
+    width: 102px;
+    margin-right: 12px;
+}
+    .cosplay h2 {
+        margin-bottom: 28px;
+    }
+    .cosPlayVideo {
+        /*overflow: hidden;*/
+        margin-left: -38px;
+        margin-top: 80px;
+    }
+    .cosPlayVideo li {
+        width: 271px;
+        height: 278px;
+        margin-left: 38px;
+        float: left;
+        overflow: hidden;
+    }
+    .cosPlayVideo li a {
+        width: 271px;
+        height: 278px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+.cosPlayVideo li a img {
+    width: 271px;
+    height: 278px;
+    transform: scale(1);
+    transition: all .5s ease;
+}
+.cosPlayVideo li s {
+    width: 271px;
+    height: 278px;
+    background: #000;
+    -webkit-opacity: .6;
+    -moz-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    position: absolute;
+    top: 278px;
+    left: 0;
+    transition: all .5s ease;
+    z-index: 1;
+}
+
+.cosPlayVideo li .showBox{
+    width: 271px;
+    height: 278px;
+    position: absolute;
+    top: 278px;
+    left: 0;
+    z-index: 2;
+    background: rgba(0,0,0,.5);
+    transition: all .8s;
+
+}
+.cosPlayVideo li .showBox em {
+    width: 24px;
+    height: 4px;
+    margin: 69px auto 18px;
+    background: #c2e5fc;
+    display: block;
+}
+.cosPlayVideo li .showBox p {
+    width: 162px;
+    font-size: 14px;
+    color: #c2e5fc;
+    text-align: center;
+    font-style: italic;
+    line-height: 18px;
+    margin: 0 auto 45px;
+}
+.cosPlayVideo li .showBox .bVideo {
+    width: 53px;
+    height: 55px;
+    background: transparent url(../../images/lht/i_vtri_3ae2f98.png)no-repeat 0 0;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.cosPlayVideo li .showBox .bVideo span {
+    width: 53px;
+    height: 55px;
+    background: transparent url(../../images/lht/i_v_ffb700c.png) scroll no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate360 1.5s linear infinite;
+}
+@keyframes rotate360 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.cosPlayVideo li:hover .showBox {
+    top: 0;
+}
+.cosPlayVideo li:hover img {
+    transform: scale(1.1);
+}
+
+
+/*音画专区*/
+.videoAndPicture {
+    position: relative;
+}
+.videoAndPicture ul {
+    height: 170px;
+    position: relative;
+}
+.videoAndPicture ul li {
+    width: 282px;
+    height: 178px;
+    overflow: hidden;
+    position: absolute;
+}
+.videoAndPicture ul li:nth-child(2){
+    left: 320px;
+}
+.videoAndPicture ul li:nth-child(3){
+    left: 630px;
+}
+.videoAndPicture ul li:nth-child(4){
+    left: 950px;
+}
+.videoAndPicture ul li a {
+    width: 282px;
+    height: 178px;
+    display: block;
+    /*position: relative;*/
+    overflow: hidden;
+}
+
+.videoAndPicture {
+    margin-top: 100px;
+}
+.videoAndPicture h2 {
+    margin-bottom: 35px;
+}
+

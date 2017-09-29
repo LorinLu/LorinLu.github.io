@@ -1,0 +1,404 @@
+body{
+    background-color: #f3f8f1;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.zhuti{
+    width: 100%;
+}
+nav .daohang{
+    text-align: center;
+    height: 50px;
+    position: relative;
+}
+.daohang img{
+    position: relative;
+    z-index: 999;
+}
+.daohang a{
+    position: absolute;
+    display: none;
+    background: url("../../images/zyq/index_new2%20(1).jpg");
+    width: 973px;
+    height: 205px;
+    top: 0;
+    left:50%;
+    margin-left: -489px;
+
+}
+.daohang .wenben{
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 5px;left: 5px;
+    font-size: 12px;
+    background: #000;
+    color: #fff;
+    line-height: 20px;
+}
+.daohang>img:hover{
+    opacity: 0;
+    /*/!*display: none;*!/元素不占位置，消失了*/
+}
+.daohang>img:hover+a{
+    display: block;
+}
+
+
+
+nav .erweima{
+    position: fixed;
+    width: 72px;
+    height: 326px;
+    background:#145e85;
+    top: 50%;
+    margin-top: -163px;
+    right: -14px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background: url("../../images/zyq/tc_right_1.jpg")no-repeat;
+    z-index: 999;
+}
+.erweimaTOP{
+    width: 200px;
+    height: 440px;
+    border: 1px solid #000000;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -220px;
+    background: #fff;
+    text-align: center;
+    padding-top: 40px;
+    z-index: 9999;
+    display: none;
+}
+
+
+
+main .container-top{
+    height: 188px;
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+main .container-top .appa{
+    width: 250px;
+    height: 84px;
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    background: url(../../images/zyq/sprites.png);
+}
+
+
+main .container-top .androida{
+    width: 250px;
+    height: 84px;
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    left: 400px;
+    background: url(../../images/zyq/sprites.png) -252px 0;
+}
+
+
+main .container-top .fenxianga{
+    width: 212px;
+    height: 84px;
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    left: 700px;
+    background: url(../../images/zyq/sprites.png) -508px 0;
+}
+
+.container-bottom>div {
+    display: none;
+}
+.container-bottom>div.current {
+    display: block;
+}
+
+
+
+.container-bottom{
+text-align: center;
+    position: relative;
+}
+
+.container-bottom ul{
+    margin-top: 10px;
+
+}
+.container-bottom li{
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    margin-left: 100px;
+}
+.container-bottom .xiaoshi{
+    width:50px;
+    height: 50px;
+    display: block;
+    background:url("../../images/zyq/sprites.png") -504px -92px;
+    position: absolute;
+    top: -150px;
+    right: -20px;
+}
+
+
+.fenxiang #qq{
+    display: inline-block;
+    height: 122px;
+    width: 122px;
+    background: url("../../images/zyq/sprites.png") -252px -94px;
+}
+
+.fenxiang #xinlang{
+    display: inline-block;
+    height: 122px;
+    width: 122px;
+    background: url("../../images/zyq/sprites.png") -376px -94px;
+}
+
+
+
+
+
+
+
+
+main .yingyin{
+    position: relative;
+    height: 570px;
+    text-align: center;
+
+}
+main .yingyin {
+    height: 570px;
+    /*width: 100%;*/
+    text-align: center;
+    position: relative;
+    /*background: url("../../images/zyq/index_bg_02.jpg") repeat-x center top;*/
+    margin-bottom: 20px;
+}
+main .yingyin img{
+    height: 570px;
+    width: 100%;
+    /*position: absolute;*/
+    /*right: 262px;*/
+    /*top: 0;*/
+    /*background: url("./images/index_bg_02.jpg");*/
+}
+.shipin{
+    width: 800px;
+    height: 500px;
+    /*background: #000;*/
+    /*background: #fff;margin: 0 auto;*/
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 30px;
+}
+.shipin a{
+    width: 780px;
+    height: 480px;
+    display: inline-block;
+    /*background: pink;*/
+}
+.cd{
+    width: 780px;
+    height: 240px;
+}
+
+
+
+.miaoshu .one{
+    margin-top: 72px;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.miaoshu .two{
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.miaoshu .three{
+    margin-top: 60px;
+    font-size: 20px;
+    /*font-weight: 300;*/
+    width: 1000px;
+    height: 600px;
+    padding-left: 48px;
+}
+.miaoshu-center{
+    /*width: 1000px;*/
+    width: 1000px;
+    height: 630px;
+    background: url("../../images/zyq/index_04.jpg") no-repeat 682px 126px;
+    margin: 0 auto;
+
+    /*overflow: ;*/
+}
+
+.miaoshu .three li{
+    list-style-type: square;
+    margin-bottom: 55px;
+}
+
+.miaoshu p{
+    height: 70px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+.miaoshu-top ul {
+    list-style: none;
+    width: 100%;
+    position: relative;
+}
+.miaoshu-top ul li:first-child {
+    /*width: 33.33%;*/
+    position: absolute;
+    left: 100px;
+}
+.miaoshu-top ul li:last-child{
+    /*width: 33.33%;*/
+    position: absolute;
+    right: 100px;
+}
+.miaoshu-top{
+    /*width: 1630px;*/
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    /*border: 1px solid pink;*/
+    overflow: hidden;
+
+}
+
+.miaoshu-top li img {
+    width: 533px;
+    /*height: 300px;*/
+    height: 300px;
+    /*margin-right: 20px;*/
+    margin: -10px;
+    float: left;
+    transition:all 2s;
+}
+.miaoshu-top li:hover img{
+    transform:rotateY(180deg);
+
+}
+
+
+
+/*轮播图部分开始*/
+
+.lunbotu{
+    width: 100%;
+    height: 620px;
+    /*background: url("../../images/zyq/index_bg_03.jpg") repeat-x center top;*/
+}
+.lunboT{
+    /*width: 1000px;*/
+    height: 620px;
+    margin-top: 10px;
+    position: relative;
+
+    background: url("../../images/zyq/index_05.jpg");
+}
+.lunbotu ul {
+    list-style: none;
+    width: 700%;
+}
+
+.lunbotu .inner {
+    position: relative;
+    overflow: hidden;
+    /*height: 530px;*/
+    width: 780px;
+    height: 530px;
+    /*padding: 8px;*/
+    border: 1px solid green;
+    margin: 100px auto;
+}
+.lunbotu #imglist {
+    /*width: 600%;*/
+    position: absolute;
+    left: 0;
+}
+.lunbotu li {
+    float: left;
+}
+
+
+
+.lunbotu .arrow-left{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 140px;
+    height: 550px;
+    background: url("../../images/zyq/left.png");
+
+}
+.lunbotu .arrow-right{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 140px;
+    height: 550px;
+    background: url("../../images/zyq/right.png");
+
+}
+
+
+/*footer部分开始*/
+.bottom{
+    // width: 100%;
+    height: 168px;
+    background: #000000;
+    /*margin-top: 53px;*/
+    color: #858585;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 70px;
+    position: relative;
+
+}
+
+.bottom .two{
+    margin-top: 20px;
+    height: 14px;
+
+}
+
+
+.donghua{
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    /*border: 1px solid;*/
+    font-size: 16px;
+    line-height: 50px;
+    /*display: none;*/
+    position: fixed;
+    /*top: 50%;*/
+    z-index: 888;
+    bottom: 0;
+}

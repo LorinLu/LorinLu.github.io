@@ -1,0 +1,128 @@
+/*
+* @Author: Tao
+* @Date:   2017-09-08 08:21:10
+* @Last Modified by:   Tao
+* @Last Modified time: 2017-09-09 09:58:41
+*/
+     body {
+        background: url(../images/bg_img.jpg)no-repeat center center;
+        font-family: "microsoft yahei";
+     }
+     header {
+        background: url(../images/header_bg.jpg)no-repeat center center;
+        height: 1080px;
+        width: 100%;
+     }
+     .header-top .nav {
+        padding-top: 60px;
+     }
+     .header-top .nav li {
+        float: left;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        margin-left: 53px;
+     }
+     .header-top .nav li.small {
+        margin-left: 18px;
+     }
+     .header-top .nav li.middle {
+        margin-left: 32px;
+        margin-top: -30px;
+     }
+     .header-top .nav li a {
+        color: #fff;
+     }
+     .header-top .nav li a:hover {
+        color:  #fdda46;
+     }
+    .slogan {
+        width: 916px;
+        height: 194px;
+        margin: 389px auto 0;
+    }
+    .meng-download {
+        width: 770px;
+        height: 121px;
+        margin: 26px auto 0;
+    }
+    .download-code {
+        width: 95px;
+        height: 95px;
+        padding: 5px;
+        background: #fff;
+    }
+    .download-code img {
+        width: 100%;
+        height: 100%;
+    }
+    .download-btn {
+        width: 171px;
+        margin: 0 10px 0 5px;
+    }
+    .download-btn .az-img {
+        margin-top: 5px;
+    }
+    .app-logo {
+        width: 105px;
+        height: 105px;
+        margin-right: 35px;
+    }
+    .app-logo img {
+        width: 100%;
+        height: 100%;
+    }
+    .slogan-video {
+        width: 122px;
+        height: 131px;
+        background: transparent url(../images/videoBtn2_c83e42d.png) scroll no-repeat 0 0;
+        position: relative;
+        margin-top: -10px;
+        margin-right: 19px;
+    }
+    .slogan-video span {
+        width: 98px;
+        height: 101px;
+        background: transparent url(../images/i_zz2_18a2002.png) scroll no-repeat 0 0;
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        transition: all 0.3s;
+    }
+    .slogan-video em {
+        width: 24px;
+        height: 28px;
+        background: transparent url(../images/tri_639abac.png) scroll no-repeat 0 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -16px 0 0 -7px;
+        transition: all 0.3s;
+    }
+    .slogan-video:hover span {
+        opacity: 0;
+    }
+    .slogan-video:hover em {
+        transform: scale(1.2, 1.2);
+    }
+    .appointmentBtn {
+        display: block;
+        margin-top: 10px;
+    }
+    .game-news {
+        margin-top: -100px;
+    }
+    .game-news {
+        margin-bottom: 28px;
+    }
+    .game-news h2 {
+        margin-bottom: 27px;
+    }
+    .banner {
+        width: 580px;
+        height: 297px;
+        overflow: hidden;
+    }
+    .banner ul li {
+        float: left;
+    }
