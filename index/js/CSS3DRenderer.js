@@ -56,7 +56,7 @@ THREE.CSS3DRenderer = function () {
 	domElement.style.MozTransformStyle = 'preserve-3d';
 	domElement.style.oTransformStyle = 'preserve-3d';
 	domElement.style.transformStyle = 'preserve-3d';
-	domElement.setAttribute("href","../lht.html");
+	domElement.setAttribute("href","./lht.html");
 	domElement.setAttribute("target","_blank");
 
 	this.domElement = domElement;
@@ -67,7 +67,7 @@ THREE.CSS3DRenderer = function () {
 	cameraElement.style.MozTransformStyle = 'preserve-3d';
 	cameraElement.style.oTransformStyle = 'preserve-3d';
 	cameraElement.style.transformStyle = 'preserve-3d';
-	domElement.setAttribute("href","../lht.html");
+	domElement.setAttribute("href","./lht.html");
 	domElement.setAttribute("target","_blank");
 
 	domElement.appendChild( cameraElement );
